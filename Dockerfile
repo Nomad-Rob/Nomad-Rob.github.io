@@ -29,6 +29,10 @@ RUN npm install -g \
     eslint
 # Install VIM as backup IDE
 RUN apt-get install -y vim
+
+# Install Makefile
+#RUN apt-get install -y make
+#RUN apt-get install -y vscode pdf
 # Example:
 # RUN apt-get install -y nodejs npm
 # RUN npm install -g create-react-app
