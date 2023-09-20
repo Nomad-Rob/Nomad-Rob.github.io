@@ -1,26 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-----------------Required meta tags---------------------->
-    <meta charset="UTF-8">
+    <!--------------------------Required Meta tags-------------------------------------->
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-----------------Title and description------------------->
     <title>Robert Farley | Full Stack Software Developer</title>
     <meta name="description" content="Robert Farley is a full stack software developer based in the USA.">
-    
 
-    <!-----------------CSS links---------------------------->
-    <link rel="stylesheet" href="css/base.css">
+    <!------------------CSS Links---------------------------------->
+    <link rel="stylesheet" href="main.css" />
     
-    <!-----------------Scripts will go here----------------------------->
+    <!--------------Scripts-------------------------------->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     
-    <!-----------------Favicons will go here----------------------------->
-</head>
-
-<body>
-    <body id="top">
-        <!-----------------Header----------------------->
-    
-</body>
+    <!----------------------Favicons------------------->
+    </head>
+    <body>
+        
+        <!-------------------------Projects with links------------------------------->
+        <!-------------------------Project 1------------------------------------------>
+        <div class="options">
+            <div class="option active" style="--optionBackground: url(/Nomad-Rob.github.io/src/assets/breakfast_game.jpg);"><!---Still need to add-->
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-dice"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Wes's Cozy Kitchen</div>
+                        <div class="main">HackSprint Pygame!</div>
+                        <a href="https://github.com/Nomad-Rob/Hack_Sprint-Breakfast", target="_blank", class="link-as-text">Check it out</a>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------Project 2------------------------------------------>
+            <div class="option" style="--optionBackground: url();"><!---Still need to add-->
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Simple Shell Project</div>
+                        <div class="main">UNIX Command Interpreter written in C!</div>
+                        <a href="https://github.com/Nomad-Rob/holbertonschool-simple_shell", target="_blank", class="link-as-text">Check it out</a>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------Project 3------------------------------------------>
+            <div class="option" style="--optionBackground: url();"> <!---Still need to add-->
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Job Applications</div>
+                        <div class="main">Keep track of all your apps!</div>
+                        <a href="https://github.com/Nomad-Rob/job_tracker", target="_blank", class="link-as-text">Check it out</a>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------Project 4------------------------------------------>
+            <div class="option" style="--optionBackground: url();"><!---Still need to add-->
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">AirBnB Clone</div>
+                        <div class="main">A clone to showcase some skills!</div>
+                        <a href="https://github.com/Nomad-Rob/holbertonschool-AirBnB_clone_v4", target="_blank", class="link-as-text">Check it out</a>
+                    </div>
+                </div>
+            </div>
+            <!-------------------------Project 5------------------------------------------>
+            <div class="option" style="--optionBackground: url();"><!---Still need to add-->
+                <div class="label">
+                    <div class="icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="info">
+                        <div class="main">Placeholder</div>
+                        <div class="main">For now</div>
+                        <a href="https://github.com/Nomad-Rob/holbertonschool-AirBnB_clone_v4", target="_blank", class="link-as-text">Check it out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------JavaScript to handle Project CSS------------------->
+        <script>
+            $(".option").click(function () {
+                $(".option").removeClass("active");
+                $(this).addClass("active");
+            });
+        </script>
+    </body>
 </html>
