@@ -12,3 +12,10 @@ MongoDB, JSON, and Python as well.
 
 Docker is working now! :)
 Next setup is the frontend stuff before I touch the backend. Since I need to focus on frontend this trimester.
+
+
+# TODO
+- Looking into Firebase for hosting and database.
+- Looking into React for frontend.
+- Look at different GUI for MySQL.
+- See how I want my data to be displayed.
