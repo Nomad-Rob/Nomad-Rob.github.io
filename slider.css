@@ -25,6 +25,8 @@ body .options {
     width: calc(100% - 100px);
     height: 400px;
 }
+
+
 /* Styling for links inside the projects body*/
 .link-as-text {
     text-decoration: none; /* Remove the default underline */
