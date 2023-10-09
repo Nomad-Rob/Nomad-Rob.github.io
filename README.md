@@ -19,3 +19,6 @@ Next setup is the frontend stuff before I touch the backend. Since I need to foc
 - Looking into React for frontend.
 - Look at different GUI for MySQL.
 - See how I want my data to be displayed.
+
+# DONE
+-Wireframe for the website.
