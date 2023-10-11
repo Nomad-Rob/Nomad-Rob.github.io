@@ -2,23 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Robert Farley</title>
-  <link rel="icon" type="image/png" href="images/favicon.jpg">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Unique Portfolio</title>
 </head>
 <body>
-  <!–---- Header -----–>
-  <header class="header" data-section-theme="dark">
-    <div class="header-container">
-      <div class="header-logo">
-        <a href="/">
-          <img src="./assets/images/nomad_black.png" alt="My Logo" width="300" height="300">
-        </a>
-      </div>
+
+  <header>
+    <div id="logo">
+      <img src="./assets/images/nomad_black.png" alt="Your Logo">
+    </div>
+    <div id="menu-icon" onclick="toggleMenu()">
+      ☰
+    </div>
+    <nav id="menu-bar">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div id="social-links">
+      <a href="https://github.com/your-username"><img src="https://via.placeholder.com/20" alt="Github"></a>
+      <a href="https://www.linkedin.com/in/your-username/"><img src="https://via.placeholder.com/20" alt="LinkedIn"></a>
+      <a href="mailto:your-email@example.com"><img src="https://via.placeholder.com/20" alt="Email"></a>
     </div>
   </header>
-  
+
+  <section id="about">
+    <img src="https://via.placeholder.com/1280x720" alt="Background">
+    <div id="about-text">
+      <h1>About Me</h1>
+      <p>This is where you can talk about yourself.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <!-- Project Cards -->
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300" alt="Project 1">
+      <p>Project 1</p>
+    </div>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/300" alt="Project 2">
+      <p>Project 2</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p>This is where you talk about your professional experience.</p>
+    <a href="your-resume.pdf">Download Resume</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name">
+      <input type="email" name="email" placeholder="Your Email">
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+
 </body>
 </html>

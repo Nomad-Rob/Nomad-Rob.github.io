@@ -1,0 +1,113 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, form {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color */
+body {
+  background: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Logo styles */
+#logo img {
+  height: 50px;
+}
+
+/* Menu icon styles */
+#menu-icon {
+  cursor: pointer;
+  display: none;
+}
+
+/* Menu bar styles */
+#menu-bar a, #social-links a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Social Links */
+#social-links img {
+  height: 20px;
+  margin: 0 10px;
+}
+
+/* About section */
+#about {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#about img {
+  width: 100%;
+}
+
+#about-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Projects section */
+#projects {
+  text-align: center;
+  background: #eee;
+  padding: 2em 0;
+}
+
+.project-card {
+  display: inline-block;
+  margin: 1em;
+}
+
+.project-card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Experience section */
+#experience {
+  padding: 2em;
+  text-align: center;
+}
+
+/* Contact section */
+#contact {
+  background: #eee;
+  text-align: center;
+  padding: 2em 0;
+}
+
+form input, form textarea {
+  display: block;
+  margin: 0 auto 1em auto;
+  padding: 0.5em;
+  width: 80%;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+
+  #menu-bar {
+    display: none;
+  }
+}
