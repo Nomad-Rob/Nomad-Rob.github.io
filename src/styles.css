@@ -1,113 +1,328 @@
-/* Reset some default browser styles */
-body, h1, h2, h3, p, form {
-  margin: 0;
-  padding: 0;
+/* Import Google Fonts for "Open Sans" */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+/* Reset default styles and set font family to Open Sans */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
 }
 
-/* Apply a background color */
+/* Body styles */
 body {
-  background: #f9f9f9;
-  font-family: Arial, sans-serif;
+    background-image: url("./assets/images/background.png");
+    background-repeat: no-repeat;
+    max-height: 100vh;
+    background-position: start;
+    background-size: cover;
 }
 
-/* Style the header */
+/* Header styles */
 header {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 1em 0;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
+    text-transform: uppercase;
 }
 
-/* Logo styles */
-#logo img {
-  height: 50px;
+header div {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
 }
 
-/* Menu icon styles */
-#menu-icon {
-  cursor: pointer;
-  display: none;
+header div div a {
+    color: white;
+    margin: 0 30px;
 }
 
-/* Menu bar styles */
-#menu-bar a, #social-links a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
+/* First section styles */
+section:nth-child(1) div:nth-child(1) {
+    margin: 60px 0;
+    text-align: center;
 }
 
-/* Social Links */
-#social-links img {
-  height: 20px;
-  margin: 0 10px;
+section:nth-child(1) div:nth-child(1) h1 {
+    font-size: 120px;
+    color: white;
 }
 
-/* About section */
-#about {
-  position: relative;
-  text-align: center;
-  color: white;
+.sub-title {
+    text-transform: uppercase;
+    color: white;
+    word-spacing: 60px;
 }
 
-#about img {
-  width: 100%;
+button {
+    background-color: #c271ff;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px;
+    border: 0;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-#about-text {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+section:nth-child(1) div:nth-child(2) {
+    text-align: center;
+    padding-bottom: 10px;
 }
 
-/* Projects section */
-#projects {
-  text-align: center;
-  background: #eee;
-  padding: 2em 0;
+section:nth-child(1) div:nth-child(2) h2 {
+    padding-top: 70px;
+    font-size: 32px;
+    color: white;
 }
 
-.project-card {
-  display: inline-block;
-  margin: 1em;
+section:nth-child(1) div:nth-child(2) h2 span {
+    color: #c271ff;
 }
 
-.project-card img {
-  width: 300px;
-  height: 200px;
-  object-fit: cover;
+section:nth-child(1) div:nth-child(2) div {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
 }
 
-/* Experience section */
-#experience {
-  padding: 2em;
-  text-align: center;
+section:nth-child(1) div:nth-child(2) div div {
+    margin: 20px;
 }
 
-/* Contact section */
-#contact {
-  background: #eee;
-  text-align: center;
-  padding: 2em 0;
-}
-
-form input, form textarea {
-  display: block;
-  margin: 0 auto 1em auto;
-  padding: 0.5em;
-  width: 80%;
-}
-
-/* Media queries */
-@media screen and (max-width: 768px) {
-  #menu-icon {
+section:nth-child(1) div:nth-child(2) div div,
+img,
+h3,
+p {
     display: block;
-  }
+}
 
-  #menu-bar {
-    display: none;
-  }
+section:nth-child(1) div:nth-child(2) div div h3 {
+    font: bold;
+    color: white;
+    margin: 0.45rem 0;
+}
+
+section:nth-child(1) div:nth-child(2) div div p {
+    color: rgb(215, 215, 215);
+    font-style: italic;
+}
+
+/* Second section styles */
+section:nth-child(2) {
+    background-color: #c271ff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px 0;
+}
+
+section:nth-child(2) div:nth-child(1) {
+    color: white;
+}
+
+section:nth-child(2) blockquote {
+    margin-top: 10px;
+}
+
+.author {
+    font-weight: bold;
+    font-size: large;
+    margin: 20px 0 10px 0;
+}
+
+section:nth-child(2) img {
+    width: 160px;
+    float: left;
+    margin-right: 30px;
+}
+
+/* Third section styles */
+section:nth-child(3) {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+section:nth-child(3) h1 {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 60px 0;
+}
+
+section:nth-child(3) h1 span {
+    font-weight: bold;
+    color: #c271ff;
+}
+
+.vd-block {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+.vd {
+    max-width: 255px;
+}
+
+.vd h2 {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+.vd p {
+    color: #07162980;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.vd-author {
+    display: flex;
+    align-items: center;
+}
+
+.vd-author img {
+    width: 30px;
+}
+
+.vd-author h3 {
+    font-size: 14px;
+    margin-left: 10px;
+    color: #c271ff;
+}
+
+.vd-rat {
+    display: flex;
+    margin: 15px 0;
+    justify-content: space-between;
+}
+
+.vd-rat div img {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.vd-rat div {
+    display: flex;
+}
+
+.vd-rat p {
+    color: #c271ff;
+}
+
+/* Membership section styles */
+section:nth-child(4) {
+    text-align: center;
+    background-color: #071629;
+    color: white;
+}
+
+section:nth-child(4) h1 {
+    padding: 50px 0;
+    font-weight: 300;
+}
+
+section:nth-child(4) h1 span {
+    font-weight: bold;
+    color: #c271ff;
+}
+
+section:nth-child(4) div {
+    display: flex;
+    justify-content: space-around;
+}
+
+section:nth-child(4) div div,
+img,
+h2,
+p {
+    display: block;
+}
+
+section:nth-child(4) div div {
+    max-width: 257px;
+}
+
+section:nth-child(4) div div img {
+    text-align: center;
+    margin-left: 40%;
+}
+
+section:nth-child(4) div div h2 {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+section:nth-child(4) div div p {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgb(221, 221, 221);
+}
+
+section:nth-child(4) button {
+    margin: 60px 0 50px 0;
+}
+
+/* FAQ section styles */
+section:nth-child(5) {
+    margin: 0 0 60px 0;
+    text-align: center;
+}
+
+section:nth-child(5) .title {
+    font-size: 60px;
+    font-weight: 300;
+    margin: 60px 0;
+}
+
+section:nth-child(5) .block .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+section:nth-child(5) .block .row div {
+    text-align: left;
+    max-width: 350px;
+    margin-bottom: 60px;
+}
+
+section:nth-child(5) .block .row div h2 {
+    margin: 20px 0 30px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+section:nth-child(5) .block .row div p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #071629;
+    line-height: 1.5;
+}
+
+/* Footer styles */
+footer {
+    background-color: #071629;
+    color: white;
+}
+
+footer .block {
+    display: flex;
+    justify-content: space-around;
+    padding: 90px 0;
+    text-align: center;
+}
+
+footer .block div:nth-child(2) {
+    display: flex;
+}
+
+footer .block div:nth-child(2) a {
+    margin: 0 10px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 40px;
 }
