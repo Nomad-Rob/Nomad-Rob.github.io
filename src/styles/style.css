@@ -1,0 +1,83 @@
+/* Variables */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  /* Primary (Background/Theme) */
+  --color-primary: #F5F5F5;
+  /* Secondary (Accents/Highlights) */
+  --color-2: #0078D4;
+  --color-3: #8B2635;
+  --color-4: #3CBA92;
+  /* Text (Text/Icons) */
+  --color-5: #333333;
+  --color-6: #606060;
+}
+
+.dark-mode {
+  /* Primary (Background/Theme) */
+  --color-primary: #1E1E2E;
+  /* Secondary (Accents/Highlights) */
+  --color-2: #0096FF;
+  --color-3: #A34150;
+  --color-4: #2DABA8;
+  /* Text (Text/Icons) */
+  --color-5: #E0E0E0;
+  --color-6: #A0A0A0;
+}
+
+body {
+  background-color: var(--color-primary);
+  font-family: 'Poppins', 'Noto Serif Georgian', sans-serif;
+  font-size: 1.1rem;
+  color: var(--color-5);
+  transition: all 0.5s ease-in-out;
+}
+
+.container-lg {
+  position: absolute;
+}
+
+.homepage-image
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scaleX(-1);
+  background-size: cover;
+  
+}
+
+.homepage-text {
+  position: relative;
+  margin: .5em auto;
+  padding: 1em;
+  width: 20em; height: 8em;
+  border-radius: .25em;
+  transform: rotate(-4deg) rotateY(15deg);
+  background: #629bdd;
+  text-align: center;
+}
+
+.homepage-text::before, .homepage-text::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+}
+
+.homepage-text::before {
+  top: 0; right: 0; bottom: 0; left: 0;
+  border-radius: inherit;
+  transform: rotate(2deg) translate(.35em, -.15em) scale(1.02);
+  background: #f4fbfe;
+}
+
+.bottom-line-text {
+  font-size: 3rem;
+  color: var(--color-2)
+}
