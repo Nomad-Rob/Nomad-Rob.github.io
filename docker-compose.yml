@@ -1,0 +1,73 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=yourdbname
+      - POSTGRES_USER=yourdbuser
+      - POSTGRES_PASSWORD=yourdbpassword
+    networks:
+      - backend
+
+  redis:
+    image: redis:alpine
+    networks:
+      - backend
+
+  flask-app:
+    build: ./path-to-your-flask-app
+    command: python app.py
+    volumes:
+      - ./path-to-your-flask-app:/usr/src/app
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+      - redis
+    networks:
+      - backend
+      - frontend
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./path-to-your-nginx-conf:/etc/nginx/conf.d
+      - web-data:/usr/share/nginx/html
+    depends_on:
+      - flask-app
+    networks:
+      - frontend
+
+  certbot:
+    image: certbot/certbot
+    depends_on:
+      - nginx
+    command: certonly --webroot --webroot-path=/usr/share/nginx/html --email your-email@example.com --agree-tos --no-eff-email --staging -d example.com -d www.example.com
+    volumes:
+      - web-data:/usr/share/nginx/html
+      - ./path-to-your-letsencrypt:/etc/letsencrypt
+    networks:
+      - frontend
+
+  node-app:
+    build: ./path-to-your-node-app
+    volumes:
+      - ./path-to-your-node-app:/usr/src/app
+    ports:
+      - "3000:3000"
+    networks:
+      - frontend
+
+volumes:
+  db-data:
+  web-data:
+
+networks:
+  backend:
+  frontend:
