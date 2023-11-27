@@ -1,24 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link href="./styles/style.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rob's Portfolio Website</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-
-<!--- Project Cards --->
-<div class="container mt-5">
-    <div class="row" id="projects-container">
-    <!-- Projects will be dynamically loaded here using JavaScript -->
+  <div class="nav-bar">
+    <div class="nav-logo">RF</div>
+    <div class="nav-links-container">
+        <a class="nav-link active" href="#topSection" id="topLink">Home</a>
+        <a class="nav-link" href="#aboutSection" id="aboutLink">About Me</a>
+        <a class="nav-link" href="#portfolioSection" id="portfolioLink">Portfolio</a>
+        <a class="nav-link" href="#resumeSection" id="resumeLink">Resume</a>
+        <a class="nav-link" href="#systemSection" id="systemLink">System</a>
+        <a class="nav-link" href="#pictureSection" id="pictureLink">Pictures</a>
+        <a class="nav-link" href="#contactSection" id="contactLink">Contact</a>
     </div>
 </div>
-
-<!-- JavaScript File -->
-<script src="./js/projects.js"></script>
+<div class="rela-block top-section grad-back" id="topSection">
+    <div class="abs-cent-text top-text">
+        <h1 class="big-text display-1">Rob Farley</h1>
+        <div class="orbitron top-orb">\\\\\/////</div>
+        <p class="top-small-text display-4">Welcome to my website.<br>Take a look below and feel free to <span class="intro-text">reach out.</span></p>
+    </div>
+</div>
+<div class="rela-block under-top-section">
+    <div class="half-big-text under-top-big-text">Some <span class="highlight">things</span> to know</div>
+    <div class="lines-thing"></div>
+    <p class="under-top-small-text">This website is designed to showcase my software engineer portfolio mostly. But it will also be used to help me keep things organized throughout my new career.</p>
+  </div>
+<div class="rela-block about-me-section" id="aboutSection">
+    <h1 class="half-big-text has-border">About <span class="highlight">Me</span></h2>
+      <div class="rela-block social-buttons-container">
+        <a href="https://www.linkedin.com/in/robertfarley89/" target="_blank">
+            <div class="social-button linkedin-button"></div>
+        </a>
+        <a href="https://github.com/Nomad-Rob" target="_blank">
+            <div class="social-button github-button"></div>
+        </a>
+        <a href="https://www.instagram.com/nomad_rob/" target="_blank">
+            <div class="social-button instagram-button"></div>
+        </a>
+      </div>
+    <div class="orbitron black-orb">\\\\\/////</div>
+    <div class="rela-block about-me-quad-container">
+        <div class="rela-block quad-row">
+            <div class="quad-half floated left">
+                <h2 class="small-header">Locations</h2>
+                <p>I have lived in over 10 states and 4 countries, <br>with the latest being Tulsa, Oklahoma.</p>
+            </div>
+            <div class="quad-half floated right">
+                <h2 class="small-header">Movies/TV Shows</h2>
+                <p>Watching movies with people is something I enjoy. Fav TV show right now is "The</p>
+            </div>
+        </div>
+        <div class="rela-block quad-row">
+            <div class="quad-half floated left">
+                <h2 class="small-header">Food Hate</h2>
+                <p>I HATE PICKLES AND MAYO, So don't put that on anything inbetween any slices of bread!</p>
+            </div>
+            <div class="quad-half floated right">
+                <h2 class="small-header">Military</h2>
+                <p>I've had a few different jobs in the military to include a UH-60M Pilot and Reconnaissance Infantry.</p>
+            </div>
+        </div>
+    </div>    
+</div>
+<div class="rela-block portfolio-section" id="portfolioSection">
+    <div class="rela-block portfolio-top grad-back">
+        <h1 class="half-big-text has-border">Port<span class="highlight">folio</span></h1>
+</div>
+<div class="rela-block portfolio-second">
+    <div class="has-lines white">Show All</div>
+    <div class="has-lines white">Fullstack</div>
+    <div class="has-lines white">Backend</div>
+    <div class="has-lines white">Frontend</div>
+    <div class="has-lines white">Other</div>
+</div>
+<div class="rela-block portfolio-collage">
+    <div class="floated left collage-column">
+        <div class="floated left collage-image third one"></div>
+        <div class="floated left collage-image third two"></div>
+        <div class="floated left collage-image third three"></div>
+    </div>
+    <div class="floated left collage-column">
+        <div class="floated left collage-image third four"></div>
+        <div class="floated left collage-image two-thirds five"></div>
+    </div>
+    <div class="floated left collage-column">
+        <div class="floated left collage-image two-thirds six"></div>
+        <div class="floated left collage-image third seven"></div>
+    </div>
+</div>
+<!-- <div id="github-stats"></div> -->
+</div>
+<div class="rela-block resume-section" id="resumeSection">
+    <h1 class="half-big-text has-border">Re<span class="highlight">sume</span></h1>
+    <p>Please Check out my Generalized Resume below.</p>
+    <div class="orbitron black-orb">\\\\\/////</div>
+    <iframe src="../src/assets/General Resume.pdf" width="1000" height="1000"></iframe>
+</div>
+<div class="rela-block system-section" id="systemSection">
+  <div class="rela-block system-row">
+      <div class="floated left system-row-half grey-back">
+          <div class="abs-cent-text">
+              <h2 class="half-big-text has-border">My <span class="highlight">System</span></h2>
+          </div>
+      </div>
+      <div class="floated right system-row-half black-back">
+          <div class="abs-cent-text">
+            <h2 class="small-header">
+              <a href="https://www.forbes.com/sites/karadennison/2023/04/13/the-importance-of-upskilling-and-continuous-learning-in-2023/?sh=7b6a67f35909" target="_blank" class="custom-link">
+                  Continuous Learning
+              </a>
+            </h2>
+              <div class="orbitron white-orb">\\\\\/////</div>
+              <p>Staying on top of the latest technologies and practices to remain effective and innovative in a rapidly evolving industry is challenging.</p>
+          </div>
+      </div>
+  </div>
+  <div class="rela-block system-row">
+      <div class="floated left system-row-half">
+          <div class="abs-cent-text">
+              <h2 class="small-header">
+                <a href="https://leaders.com/articles/productivity/problem-solving/" target="_blank" class="custom-link">
+                  Problem Solving
+                </a>
+              </h2>
+              <div class="orbitron black-orb">\\\\\/////</div>
+              <p>Always trying to break down complex issues into manageable parts, applying logical reasoning and creative thinking to find efficient solutions.</p>
+          </div>
+      </div>
+      <div class="floated right system-row-half black-back text-white">
+          <div class="abs-cent-text">
+              <h2 class="small-header">
+                <a href="https://www.forbes.com/sites/forbescoachescouncil/2020/01/08/to-communicate-more-effectively-in-the-workplace-employ-these-two-questions/?sh=17bd463570de" target="_blank" class="custom-link">
+                  Effective Communication
+                </a>
+              </h2>
+              <div class="orbitron white-orb">\\\\\/////</div>
+              <p>Communication that is not just heard but also understood by trying to give the 5 W's makes life easy when done correctly.</p>
+          </div>
+      </div>
+  </div>
+  <div class="rela-block system-row">
+      <div class="floated left system-row-half">
+          <div class="abs-cent-text">
+              <h2 class="small-header">
+                <a href="https://www.betterup.com/blog/how-to-have-good-work-life-balance" target="_blank" class="custom-link">
+                  Work-Life Balance
+                </a>
+              </h2>
+              <div class="orbitron black-orb">\\\\\/////</div>
+              <p>Setting clear boundaries between professional and personal time, ensuring both productivity at both places.</p>
+          </div>
+      </div>
+      <div class="floated right system-row-half black-back">
+          <div class="abs-cent-text">
+              <h2 class="small-header">
+                <a href="https://www.linkedin.com/pulse/key-habits-quality-focused-company-freelancelatam/" target="_blank" class="custom-link">
+                  Quality Focus
+                </a>
+              </h2>
+              <div class="orbitron white-orb">\\\\\/////</div>
+              <p>Crafting code with attention to detail, ensuring reliability, efficiency, and maintainability of the software products I develop.</p>
+          </div>
+      </div>
+  </div>
+  <div class="rela-block system-row">
+      <div class="floated left system-row-half">
+          <div class="abs-cent-text">
+              <h2 class="small-header">
+                <a href="https://www.nytimes.com/2020/06/18/health/resilience-relationships-trauma.html" target="_blank" class="custom-link">
+                  Resilience
+                </a>
+              </h2>
+              <div class="orbitron black-orb">\\\\\/////</div>
+              <p>Embracing challenges and setbacks as learning opportunities is a mindset I have worked on my entire life.</p>
+          </div>
+      </div>
+      <div class="floated right system-row-half black-back">
+          <div class="abs-cent-text">
+              <h2 class="small-header">
+                <a href="https://www.psychologytoday.com/us/blog/the-power-personal-narrative/201906/the-power-perspective-taking" target="_blank" class="custom-link">
+                  Perspective
+                </a>
+              </h2>
+              <div class="orbitron white-orb">\\\\\/////</div>
+              <p>Choosing to step back and view each problem from a diverse group helps open up strategy on solving issues.</p>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="rela-block picture-section" id="pictureSection">
+    <div class="floated left test-left">
+        <div class="abs-cent-text">
+            <h2 class="half-big-text has-border"><span class="highlight">Pic</span>tures</h2>
+        </div>
+    </div>
+    <div class="floated left test-right">
+        <div class="abs-cent-text">
+          <div class="carousel slide" id="carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../src/assets/images/carousel/broken_wall.jpg" class="d-block w-100" alt="First Image">
+                </div>
+                <!-- Only one carousel-item needs to be active and have an image initially -->
+            </div>
+        </div>
+        
+        </div>
+      </div>
+   </div>
+</div>
+<div class="rela-block contact-section" id="contactSection">
+    <h2 class="half-big-text has-border">Con<span class="highlight">tact</span></h2>
+    <p>Interested in collaborating or have a question? I'd love to hear from you! <br>Feel free to reach out to me through any of the provided channels,<br>and I'll get back to you as soon as possible.</p>
+    <div class="orbitron black-orb">\\\\\/////</div>
+    <div class="rela-block contact-form-container">
+        <div class="contact-half contact-left">
+            <h2 class="small-header">My information is listed below.</h2>
+            <p>Currently I am a Full-Time student learning<br>Software Engineer at Holberton Tulsa.</p>
+            <div class="rela-block left-quad-container">
+                <div class="contact-quad">Tulsa,<br>Oklahoma</div>
+                <div class="contact-quad">570-209-6717</div>
+                <div class="contact-quad">rfarley89@gmail.com</div>
+                <div class="contact-quad">My Schedule:<br>M-F: 8 AM - 3 PM</div>
+            </div>
+        </div>
+        <div class="contact-half contact-right">
+            <input type="text" placeholder="ENTER YOU NAME" class="contact-input" />
+            <input type="text" placeholder="ENTER YOUR EMAIL" class="contact-input" />
+            <input type="text" placeholder="PHONE NUMBER" class="contact-input" />
+            <textarea cols="40" rows="5" placeholder="ENTER YOUR MESSAGE" class="contact-input big-input"></textarea>
+            <h2 class="small-header submit-button">Submit</h2>
+        </div>
+    </div>
+</div>
+<div class="rela-block footer-section">
+    <h2 class="small-header top-link">Back to <span class="highlight">Top</span></h2>
+    <div class="rela-block social-buttons-container">
+      <a href="https://www.linkedin.com/in/robertfarley89/" target="_blank">
+          <div class="social-button linkedin-button"></div>
+      </a>
+      <a href="https://github.com/Nomad-Rob" target="_blank">
+          <div class="social-button github-button"></div>
+      </a>
+      <a href="https://www.instagram.com/nomad_rob/" target="_blank">
+          <div class="social-button instagram-button"></div>
+      </a>
+    </div>
+    <p>Thank you for taking the time to view my website. I hope to connect with you<br>and hear your story of what brought you here. See you soon!</p>
+</div>\
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-0QmT9z9O8gR8nsS+qCqzfuLpqwR5e5L6RtO4JGtHfbcwYl6Q5f03zb0p8m04Ib1T" crossorigin="anonymous"></script>
+<script src="nav.js"></script>
+<!-- <script src="github.js"></script> -->
 </body>
 </html>

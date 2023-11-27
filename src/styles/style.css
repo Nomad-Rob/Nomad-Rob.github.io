@@ -1,7 +1,792 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+@import url("https://fonts.googleapis.com/css?family=Orbitron:700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+:root
+{
+  --primary-color: rgba(241,128,45, 0.7);
+}
+a {
+  text-decoration: none;
+}
+* {
+  transition: 0.4s ease;
+}
 body {
-  background-color: #f4f4f4;
+  overflow-x: hidden;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.highlight {
+  color: var(--primary-color);
+}
+.rela-block {
+  display: block;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.floated {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.floated.left {
+  float: left;
+  padding-left: 40px;
+}
+.floated.right {
+  float: right;
+  padding-left: 60px;
+}
+.abs-cent-text {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.orbitron {
+  display: inline-block;
+  position: relative;
+  font-family: "Orbitron";
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 32px;
+  margin-bottom: 60px;
+}
+.orbitron::before,
+.orbitron::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 60%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+}
+.orbitron::before {
+  left: -65%;
+}
+.orbitron::after {
+  right: -63%;
+}
+.orbitron.black-orb::before,
+.orbitron.black-orb::after {
+  background-color: #000;
+}
+
+
+.nav-bar {
+  position: fixed;
+  z-index: 100;
+  height: 200px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 6%;
+  ;
+}
+.nav-bar.scrolled {
+  height: 160px;
+  background-color: transparent;
+}
+.nav-logo {
+  position: absolute;
+  top: 20%;
+  left: 6%;
+  transform: translateY(-50%);
+  font-family: "Montserrat";
+  font-size: 24px;
+  letter-spacing: 0px;
+  color: rgba(241,128,45, 0.7);
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.nav-links-container {
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  transform: translateY(-50%);
+  color: rgba(241,128,45, 0.7);
+}
+.nav-link {
+  color: rgba(241,128,45, 0.7);
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transform: none;
+  cursor: pointer;
+  font-weight: bold; /* Added font-weight property */
+  padding: 0 12px;
+  transition: 0.4s ease;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: rgba(84,154,171, 0.7);
+}
+.top-section {
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1557878897-039c48d955b1?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center;
+  background-size: cover;
+}
+.grad-back::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(transparent, rgba(0,0,0,0.9));
+}
+
+.intro-text {
+  color: rgba(241,128,45, 0.7);
+  font-weight: 500;
+}
+.top-text {
+  color: #fff;
+  top: 58%;
+  line-height: 28px;
+}
+.top-small-text {
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.big-text {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 58px;
+  line-height: 72px;
+  letter-spacing: 20px;
+  margin-bottom: 60px;
+}
+.half-big-text {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 12px;
+  margin-bottom: 45px;
+  font-weight: 500;
+}
+.half-big-text.has-border {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 50px;
+  padding: 15px 45px;
+  border: 10px solid;
+}
+.under-top-section {
+  color: #fff;
+  background-color: #1d1d1d;
+  text-align: left;
+  padding: 0 6%;
+}
+.under-top-big-text {
+  margin-top: 80px;
+}
+.under-top-small-text {
+  width: 84%;
+  max-width: 580px;
+  margin-bottom: 50px;
+}
+.lines-thing {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 45px;
+  height: 2px;
+  width: 80px;
+  background-color: #fff;
+}
+.lines-thing::before,
+.lines-thing::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 25px;
+  background-color: #fff;
+}
+.lines-thing::before {
+  top: -12px;
+}
+.lines-thing::after {
+  bottom: -12px;
+}
+.lines-thing.black {
+  background-color: #000;
+}
+.lines-thing.black::before,
+.lines-thing.black::after {
+  background-color: #000;
+}
+.has-lines {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  padding: 13px 45px;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin: 10px;
+}
+.has-lines::before,
+.has-lines::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 45px;
+  right: 45px;
+  transition: 0.2s ease;
+}
+.has-lines:before {
+  top: 0;
+}
+.has-lines::after {
+  bottom: 0;
+}
+.has-lines.white:hover::before,
+.has-lines.white:hover::after {
+  background-color: #fff;
+}
+.has-lines.black:hover::before,
+.has-lines.black:hover::after {
+  background-color: #000;
+}
+.has-lines:hover::before {
+  top: 8px;
+}
+.has-lines:hover::after {
+  bottom: 10px;
+}
+.about-me-section {
+  padding: 60px 0 20px;
+}
+.about-me-section> p {
+  display: block;
+  position: relative;
+  width: 65%;
+  margin: 20px auto 40px;
+}
+.about-me-section .orbitron {
+  margin-bottom: 30px;
+}
+.about-me-quad-container,
+.about-me-bottom-container {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto 50px;
+}
+.quad-half {
+  width: 50%;
+  text-align: left;
+  padding: 20px 0px 10px;
+}
+.quad-half p {
+  width: 90%;
+}
+.small-header {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+}
+.bottom-left-side {
+  text-align: left;
+  width: 65%;
+}
+.bottom-left-side .small-header,
+.bottom-left-side .lines-thing {
+  margin-bottom: 45px;
+}
+.bottom-left-side p {
+  width: 90%;
+}
+.bottom-right-side {
+  width: 35%;
+  text-align: left;
+  line-height: 30px;
+}
+.bottom-right-side p {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+.portfolio-section {
+  color: #fff;
+}
+.portfolio-top {
+  background: url("https://images.unsplash.com/photo-1486520299386-6d106b22014b?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center;
+  background-size: 100% 100%;
+  color: #000;
+}
+.portfolio-top .half-big-text {
+  margin: 60px auto;
+}
+.portfolio-second {
+  padding: 50px 0;
+  background-color: #1d1d1d;
+}
+.portfolio-collage {
+  height: 1000px;
+  max-width: 1300px;
+  margin: auto;
+}
+.collage-column {
+  height: 100%;
+  width: 33.3333333%;
+}
+.collage-image {
+  background-size: cover !important;
+  width: 100%;
+}
+.collage-image.third {
+  height: 33.3333333%;
+}
+.collage-image.two-thirds {
+  height: 66.6666666%;
+}
+.portfolio-bottom {
+  height: 300px;
+  background: #1d1d1d;
+}
+.quarter-div {
+  height: 100%;
+  width: 25%;
+}
+.quarter-div .big-text {
+  letter-spacing: 4px;
+  margin-bottom: 15px;
+}
+.resume-section {
+  padding: 60px 0 0px;
+}
+.resume-section p {
+  position: relative;
+  width: 60%;
+  margin: 0 auto 30px;
+}
+.resume-section .orbitron {
+  margin-bottom: 40px;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  max-width: 1300px;
+  aspect-ratio: 16 / 9;
+}
+
+.profile-view-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto -15px;
+}
+.profile-view-container .profile-image {
+  display: inline-block;
+  height: 576px;
+  width: 48%;
+  vertical-align: top;
+  background: url("https://images.unsplash.com/photo-1621265054041-e90cefa414a8?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") no-repeat center;
+  background-size: 375px 576px;
+}
+.profile-view-container .arrow {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  background: url("https://image.freepik.com/free-icon/chevron-arrow-to-right--ios-7-interface-symbol_318-33616.png") no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+}
+.profile-view-container .arrow.left {
+  transform: translateY(-50%) rotate(180deg);
+  left: 0;
+}
+.profile-view-container .arrow.right {
+  right: 0;
+}
+.profile-content {
+  display: inline-block;
+  position: relative;
+  padding-top: 50px;
+  width: 48%;
+  vertical-align: top;
+  text-align: left;
+}
+.profile-content .half-big-text {
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+.profile-content .small-header {
+  display: inline-block;
+  padding: 2px 10px;
+  margin-bottom: 45px;
+  letter-spacing: 4px;
+  border: 1px solid;
+  font-size: 14px;
+  font-family: "Roboto";
+}
+.profile-content p {
+  width: 80%;
+  margin: 0 0 80px;
+}
+.system-row {
+  height: 400px;
+  max-width: 1300px;
+  margin: auto;
+}
+.system-row-half {
+  height: 100%;
+  width: 50%;
+}
+.system-row-half .orbitron {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.system-row-half.grey-back {
+  background-size: cover;
+}
+.system-row-half.black-back {
+  background-size: cover;
+  background-color: #000;
+  color: #fff;
+}
+.system-row-half.black-back .abs-cent-text.weird-one {
+  width: 300px;
+}
+
+.custom-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.custom-link:hover {
+  animation: 0.3s ease 0s 1 normal none running link-hover;
+}
+
+.custom-link:hover {
+  color: var(--primary-color);
+  font-size: larger;
+}
+
+.picture-section {
+  background-color: #000;
+  color: #fff;
+  height: 500px;
+  
+
+}
+.test-left {
+  height: 100%;
+  width: 42%;
+}
+.test-left .abs-cent-text {
+  width: 98%;
+}
+.test-right {
+  height: 100%;
+  width: 58%;
+}
+.test-right .space {
+  margin-bottom: 60px;
+  font-size: 16px;
+  letter-spacing: 4px;
+  line-height: 20px;
+}
+.test-right .small-header {
+  color: #888;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+.contact-section {
+  padding: 60px 0 120px;
+}
+.contact-section> p {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+.contact-form-container {
+  max-width: 1300px;
+  margin: auto;
+}
+.contact-half {
+  display: inline-block;
+  position: relative;
+  width: 48%;
+  vertical-align: top;
+  margin: 0 0.5% 40px;
+}
+.contact-half .small-header {
+  font-size: 14px;
+  margin: 20px auto;
+  letter-spacing: 2px;
+}
+.contact-half .submit-button {
+  cursor: pointer;
+}
+.contact-left {
+  text-align: left;
+}
+.contact-left .small-header {
+  text-transform: none;
+  letter-spacing: 1px;
+}
+.contact-left .social-button {
+  margin: 10px -10px;
+}
+.contact-left .social-button:hover {
+  transform: scale(0.75);
+}
+.left-quad-container {
+  margin: 20px auto;
+}
+.contact-quad {
+  display: inline-block;
+  width: 48%;
+  box-sizing: border-box;
+  vertical-align: top;
+  padding: 15px;
+  text-align: left;
+}
+.contact-input {
+  width: 85%;
+  margin: 8px auto;
+  font-family: "Montserrat";
+  font-size: 12px;
+  line-height: 18px;
+  padding: 10px;
+  border: 5px solid;
+  text-align: left;
+}
+.contact-input.big-input {
+  height: 140px;
+  border-top: transparent;
+  border-right: transparent;
+}
+.contact-input:focus {
+  outline: none;
+}
+.footer-section {
+  padding: 75px 0;
+  background: #000;
+  color: #fff;
+}
+.footer-section .small-header {
+  margin-bottom: 20px;
+}
+.footer-section .top-link {
+  cursor: pointer;
+}
+.social-buttons-container {
+  min-height: 100px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+.social-button {
+  display: inline-block;
+  position: relative;
+  transform: scale(0.75);
+  height: 75px;
+  width: 75px;
+  background-size: cover !important;
+  transition: 0.3s ease;
+  margin: 14px 2px;
+  cursor: pointer;
+}
+.social-button:hover {
+  transform: scale(1);
+  transition: 0.3s cubic-bezier(0.3, 0.2, 0, 2.5);
+}
+
+.social-button.github-button {
+  background: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/github-square-social-media-256.png") no-repeat center;
+}
+.social-button.linkedin-button {
+  background: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/linkedin-square-social-media-256.png") no-repeat center;
+}
+.social-button.instagram-button {
+  background: url("https://cdn4.iconfinder.com/data/icons/liu-square-blac/60/instagram-square-social-media-256.png") no-repeat center;
+}
+@media screen and (max-width: 1300px) {
+  .test-left .half-big-text {
+    letter-spacing: 2px;
+    padding: 15px 35px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .big-text {
+    font-size: 45px;
+    line-height: 50px;
+    letter-spacing: 14px;
+  }
+  .nav-logo {
+    left: 4%;
+  }
+  .nav-links-container {
+    right: 4%;
+  }
+  .nav-link {
+    padding: 0 6px;
+  }
+  .welcome-section {
+    background-size: 800px 580px;
+  }
+  .plan {
+    margin: 0px 8px 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav-bar.scrolled .nav-links-container {
+    top: 30px;
+  }
+  .nav-logo {
+    left: 50px;
+  }
+  .nav-links-container {
+    width: 140px;
+    text-align: center;
+    top: 40px;
+    transform: none;
+    right: 50px;
+  }
+  .nav-links-container:hover .nav-link {
+    transition: 0.4s ease;
+    height: 100%;
+    opacity: 1;
+  }
+  .nav-link {
+    display: block;
+    height: 0;
+    opacity: 0;
+    transition: 0s ease;
+  }
+  .nav-link.active {
+    height: 100%;
+    opacity: 1;
+  }
+  .welcome-text {
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+  }
+  .about-me-section {
+    padding: 160px 0 40px;
+  }
+  .quarter-div {
+    height: 50%;
+    width: 50%;
+  }
+  .system-row-half {
+    height: 50%;
+    width: 100%;
+  }
+  .picture-section {
+    height: 600px;
+  }
+  .test-left {
+    height: 30%;
+    width: 100%;
+  }
+  .test-right {
+    height: 70%;
+    width: 100%;
+  }
+  .test-right .space {
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+  .contact-half {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .quad-half,
+  .bottom-left-side,
+  .bottom-right-side {
+    padding: 0 0 30px;
+    width: 100%;
+  }
+  .collage-column {
+    height: 33.333333%;
+    width: 100%;
+  }
+  .collage-column:nth-child(1) .collage-image.third {
+    height: 33.333333%;
+  }
+  .collage-image.third,
+  .collage-image.two-thirds {
+    height: 50%;
+  }
+  .profile-image,
+  .profile-content {
+    width: 100%;
+    text-align: center;
+  }
+  .profile-image p,
+  .profile-content p {
+    margin: 0 auto 60px;
+  }
+  .client-part {
+    height: 25%;
+    width: 100%;
+  }
+  .client-part:nth-child(1) {
+    width: 100%;
+  }
+  .client-part:nth-child(2) {
+    background-size: 140px 100% !important;
+  }
+  .client-part:nth-child(3) {
+    background-size: 150px 100% !important;
+  }
+  .client-part:nth-child(4) {
+    background-size: 260px 100% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .big-text {
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 6px;
+    margin-bottom: 22px;
+  }
+  .orbitron {
+    margin-bottom: 22px;
+  }
+  .about-me-section {
+    padding: 80px 0 0;
+  }
+  .portfolio-bottom {
+    height: 450px;
+  }
+  .quarter-div {
+    height: 25%;
+    width: 100%;
+  }
+  .quarter-div .big-text {
+    margin-bottom: 10px;
+  }
+  .system-row {
+    height: 500px;
+  }
 }
