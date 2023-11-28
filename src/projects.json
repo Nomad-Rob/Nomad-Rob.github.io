@@ -36,6 +36,51 @@
       "imageLink": "../src/assets/images/projects/hex.png",
       "githubLink": "https://github.com/Nomad-Rob/Solo_Hackathon/tree/main/Hexclock",
       "tools": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "number": 5,
+      "title": "PlaceHolder",
+      "type": "frontend",
+      "description": "This is a brief description of Project Five.",
+      "imageLink": "../src/assets/images/projects/tictactoe.png",
+      "githubLink": "laksjdfklasdf",
+      "tools": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "number": 6,
+      "title": "PlaceHolder",
+      "type": "frontend",
+      "description": "This is a brief description of Project Six.",
+      "imageLink": "../src/assets/images/projects/tictactoe.png",
+      "githubLink": "laksjdfklasdf",
+      "tools": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "number": 7,
+      "title": "PlaceHolder",
+      "type": "backend",
+      "description": "This is a brief description of Project Seven.",
+      "imageLink": "../src/assets/images/projects/tictactoe.png",
+      "githubLink": "laksjdfklasdf",
+      "tools": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "number": 8,
+      "title": "PlaceHolder",
+      "type": "other",
+      "description": "This is a brief description of Project Eight.",
+      "imageLink": "../src/assets/images/projects/tictactoe.png",
+      "githubLink": "laksjdfklasdf",
+      "tools": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "number": 9,
+      "title": "PlaceHolder",
+      "type": "fullstack",
+      "description": "This is a brief description of Project Nine.",
+      "imageLink": "../src/assets/images/projects/tictactoe.png",
+      "githubLink": "laksjdfklasdf",
+      "tools": ["HTML", "CSS", "JavaScript"]
     }
   ]
 }
