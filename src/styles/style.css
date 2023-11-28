@@ -344,6 +344,14 @@ body {
   max-width: 1300px;
   margin: auto;
 }
+.card {
+  border: none;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
 .collage-column {
   height: 100%;
   width: 33.3333333%;

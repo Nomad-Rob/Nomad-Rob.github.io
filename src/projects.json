@@ -1,12 +1,12 @@
 
 {
-  "projects": [
+  "projectsData": [
     {
       "number": 1,
       "title": "Airplane Above",
       "type": "backend",
       "description": "This project shows the closest aircraft to your location. It uses the OpenSky API to get the aircraft data.",
-      "imageLink": "/assets/images/aircraft.png",
+      "imageLink": "../src/assets/images/projects/aircraft.png",
       "githubLink": "https://github.com/Nomad-Rob/Solo_Hackathon/tree/main/Airplane_Above",
       "tools": ["HTML", "CSS", "JavaScript", "OpenSky API", "Python", "Flask"]
     },
@@ -15,7 +15,7 @@
       "title": "Wes's Cozy Kitchen",
       "type": "other",
       "description": "A single player breakfast ingredient choosing game developed using pygame featuring a retro theme and chill gameplay with a focus on the player's choice of ingredients and how they affect the breakfast meal chosen by the Chef.",
-      "imageLink": "/assets/images/Wes's_Cozy_Kitchen.mp4",
+      "imageLink": "../src/assets/images/projects/pygame.jpg",
       "githubLink": "https://github.com/Nomad-Rob/Hack_Sprint-Breakfast",
       "tools": ["Python", "Pygame", "JSON"]
     },
@@ -24,7 +24,7 @@
       "title": "Airbnb Clone",
       "type": "fullstack",
       "description": "This is a brief description of Project Three.",
-      "imageLink": "/assets/images/projects/Airbnb_Project.png",
+      "imageLink": "../src/assets/images/projects/airbnb_project.png",
       "githubLink": "https://github.com/Nomad-Rob/holbertonschool-AirBnB_clone_v4",
       "tools": ["Python", "Flask", "MySQL", "HTML", "CSS", "JavaScript", "jQuery", "AJAX", "API", "Bootstrap", "JSON"]
     },
@@ -33,7 +33,7 @@
       "title": "Hexclock",
       "type": "frontend",
       "description": "Created a hexclock that changes the background color based on the time of day.",
-      "imageLink": "/assets/images/projects/hex.png",
+      "imageLink": "../src/assets/images/projects/hex.png",
       "githubLink": "https://github.com/Nomad-Rob/Solo_Hackathon/tree/main/Hexclock",
       "tools": ["HTML", "CSS", "JavaScript"]
     }
