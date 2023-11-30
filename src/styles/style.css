@@ -4,6 +4,7 @@
 :root
 {
   --primary-color: rgba(241,128,45, 0.7);
+  --secondary-color: rgba(120,150,116, 1);
 }
 a {
   text-decoration: none;
@@ -171,6 +172,12 @@ body {
   letter-spacing: 20px;
   margin-bottom: 60px;
 }
+
+.big-text:hover {
+  color: var(--primary-color);
+  transform: scale(1.2);
+}
+
 .half-big-text {
   font-family: "Montserrat";
   text-transform: uppercase;
@@ -187,6 +194,7 @@ body {
   padding: 15px 45px;
   border: 10px solid;
 }
+
 .under-top-section {
   color: #fff;
   background-color: #1d1d1d;
@@ -361,6 +369,8 @@ body {
 .card {
   border: none;
   transition: transform 0.2s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 .card:hover {
   transform: scale(1.02);
@@ -384,15 +394,21 @@ body {
   margin: 0 auto 20px; /* Increased margin-bottom value */
 }
 .resume-section .orbitron {
-  margin-bottom: 20px;
+  color: white;
 }
 
-iframe {
-  width: 100%;
-  height: auto;
-  max-width: 1300px;
-  aspect-ratio: 16 / 9;
-  background-color: #000;
+#openResumeBtn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  margin-top: 20px; /* Added margin-top */
 }
 .system-row {
   height: 400px;
@@ -433,12 +449,11 @@ iframe {
   font-size: larger;
 }
 
-.picture-section {
+.random-section {
   background-color: #000;
   color: #fff;
-  height: 500px;
-  
-
+  height: 400px;
+  margin: auto;
 }
 .test-left {
   height: 100%;
@@ -463,7 +478,7 @@ iframe {
   margin-bottom: 6px;
 }
 .contact-section {
-  padding: 60px 0 120px;
+  padding: 60px 0 10px;
 }
 .contact-section> p {
   width: 90%;
@@ -532,7 +547,7 @@ iframe {
   outline: none;
 }
 .footer-section {
-  padding: 75px 0;
+  padding: 40px 0;
   background: #000;
   color: #fff;
 }
@@ -647,8 +662,22 @@ iframe {
     height: 50%;
     width: 100%;
   }
-  .picture-section {
+  .random-section {
     height: 600px;
+  }
+  .new-country {
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .new-country-btn:hover {
+    background-color: #ff6699;
   }
   .test-left {
     height: 30%;
@@ -675,16 +704,11 @@ iframe {
     padding: 0 0 30px;
     width: 100%;
   }
-  .collage-column {
-    height: 33.333333%;
-    width: 100%;
-  }
-  .collage-column:nth-child(1) .collage-image.third {
-    height: 33.333333%;
-  }
-  .collage-image.third,
-  .collage-image.two-thirds {
-    height: 50%;
+  .about-me-quad-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .profile-image,
   .profile-content {

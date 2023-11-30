@@ -27,7 +27,7 @@ $(document).ready(function(){
       if ($(window).scrollTop() >= $('#contactSection').offset().top - $(window).height()/2 ) {
           $('.nav-link').removeClass('active');
           $('#contactLink').addClass('active');
-      } else if ($(window).scrollTop() >= $('#pictureSection').offset().top - $(window).height()/2 ) {
+      } else if ($(window).scrollTop() >= $('#randomSection').offset().top - $(window).height()/2 ) {
           $('.nav-link').removeClass('active');
           $('#pictureLink').addClass('active');
       } else if ($(window).scrollTop() >= $('#systemSection').offset().top - $(window).height()/2 ) {

@@ -18,7 +18,7 @@
         <a class="nav-link" href="#portfolioSection" id="portfolioLink">Portfolio</a>
         <a class="nav-link" href="#resumeSection" id="resumeLink">Resume</a>
         <a class="nav-link" href="#systemSection" id="systemLink">System</a>
-        <a class="nav-link" href="#pictureSection" id="pictureLink">Pictures</a>
+        <a class="nav-link" href="#randomSection" id="randomLink">Random</a>
         <a class="nav-link" href="#contactSection" id="contactLink">Contact</a>
     </div>
 </div>
@@ -29,7 +29,7 @@
         <p class="top-small-text display-4">Welcome to my website.<br>Take a look below and feel free to <span class="intro-text">reach out.</span></p>
     </div>
 </div>
-<div class="rela-block under-top-section">
+<div class="rela-block under-top-section ">
     <div class="half-big-text under-top-big-text">Some <span class="highlight">things</span> to know</div>
     <div class="lines-thing"></div>
     <p class="under-top-small-text">This website is designed to showcase my software engineer portfolio mostly. But it will also be used to help me keep things organized throughout my new career.</p>
@@ -87,9 +87,9 @@
 </div>
 <div class="rela-block resume-section" id="resumeSection">
     <h1 class="half-big-text has-border">Re<span class="highlight">sume</span></h1>
-    <p>Please Check out my Generalized Resume below.</p>
-    <div class="orbitron black-orb">\\\\\/////</div>
-    <iframe src="../src/assets/General Resume.pdf" width="1000" height="1000"></iframe>
+    <p>Please check out my Generalized Resume below.<br><button id="openResumeBtn">Open Resume</button></p>
+    <div class="orbitron white-orb">\\\\\/////</div>
+    </div>
 </div>
 <div class="rela-block system-section" id="systemSection">
   <div class="rela-block system-row">
@@ -183,26 +183,24 @@
       </div>
   </div>
 </div>
-<div class="rela-block picture-section" id="pictureSection">
-    <div class="floated left test-left">
-        <div class="abs-cent-text">
-            <h2 class="half-big-text has-border"><span class="highlight">Pic</span>tures</h2>
-        </div>
-    </div>
-    <div class="floated left test-right">
-        <div class="abs-cent-text">
-          <div class="carousel slide" id="carousel" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../src/assets/images/carousel/broken_wall.jpg" class="d-block w-100" alt="First Image">
-                </div>
-                <!-- Only one carousel-item needs to be active and have an image initially -->
+<div class="rela-block random-section" id="randomSection">
+    <div class="rela-block system-row">
+        <div class="floated left system-row-half grey-back">
+            <div class="abs-cent-text">
+                <h2 class="half-big-text has-border"><span class="highlight">Ran</span>dom</h2>
+                <p>This will generate a random country<br>and give some info.</p>
+                <div class="orbitron white-orb">\\\\\/////</div>
             </div>
         </div>
-        
+        <div class="floated right system-row-half black-back">
+            <div class="abs-cent-text">
+                <div id="country-info">
+                    <!-- Country information will be displayed here -->
+                </div>
+                <button id="new-country-btn">Get Random Country</button>
+            </div>
         </div>
-      </div>
-   </div>
+    </div>
 </div>
 <div class="rela-block contact-section" id="contactSection">
     <h2 class="half-big-text has-border">Con<span class="highlight">tact</span></h2>
@@ -213,9 +211,9 @@
             <h2 class="small-header">My information is listed below.</h2>
             <p>Currently I am a Full-Time student learning<br>Software Engineer at Holberton Tulsa.</p>
             <div class="rela-block left-quad-container">
-                <div class="contact-quad">Tulsa,<br>Oklahoma</div>
-                <div class="contact-quad">570-209-6717</div>
-                <div class="contact-quad">rfarley89@gmail.com</div>
+                <div class="contact-quad">Location:<br>Tulsa, Oklahoma</div>
+                <div class="contact-quad">Phone:<br>570-209-6717</div>
+                <div class="contact-quad">Email:<br>rfarley89@gmail.com</div>
                 <div class="contact-quad">My Schedule:<br>M-F: 8 AM - 3 PM</div>
             </div>
         </div>
@@ -242,11 +240,13 @@
       </a>
     </div>
     <p>Thank you for taking the time to view my website. I hope to connect with you<br>and hear your story of what brought you here. See you soon!</p>
-</div>\
+</div>
 <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-0QmT9z9O8gR8nsS+qCqzfuLpqwR5e5L6RtO4JGtHfbcwYl6Q5f03zb0p8m04Ib1T" crossorigin="anonymous"></script>
 <script src="nav.js"></script>
 <script src="projects.js"></script>
+<script src="generator.js"></script>
+<script src="resumeBtn.js"></script>
 <!-- <script src="github.js"></script> -->
 </body>
 </html>
