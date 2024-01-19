@@ -8,7 +8,7 @@
       "description": "This project shows the closest aircraft to your location. It uses the OpenSky API to get the aircraft data.",
       "imageLink": "../src/assets/images/projects/aircraft.png",
       "githubLink": "https://github.com/Nomad-Rob/Solo_Hackathon/tree/main/Airplane_Above",
-      "tools": ["HTML", "CSS", "JavaScript", "OpenSky API", "Python", "Flask"]
+      "tools": ["HTML", "CSS", "OpenSky API", "Python", "Flask"]
     },
     {
       "number": 2,
@@ -23,7 +23,7 @@
       "number": 3,
       "title": "Airbnb Clone",
       "type": "fullstack",
-      "description": "This is a brief description of Project Three.",
+      "description": "This is a clone of AirBnB from scratch. It is a fullstack application that uses a MySQL database to store data. It uses Flask to serve the backend and Jinja to render the frontend.",
       "imageLink": "../src/assets/images/projects/airbnb_project.png",
       "githubLink": "https://github.com/Nomad-Rob/holbertonschool-AirBnB_clone_v4",
       "tools": ["Python", "Flask", "MySQL", "HTML", "CSS", "JavaScript", "jQuery", "AJAX", "API", "Bootstrap", "JSON"]
@@ -39,48 +39,38 @@
     },
     {
       "number": 5,
-      "title": "PlaceHolder",
+      "title": "Museum of Imagination",
       "type": "frontend",
-      "description": "This is a brief description of Project Five.",
-      "imageLink": "../src/assets/images/projects/tictactoe.png",
-      "githubLink": "laksjdfklasdf",
-      "tools": ["HTML", "CSS", "JavaScript"]
+      "description": "This is a custom frontend design from scratch utilizing three.js to create a 3D environment. Built in 10 days",
+      "imageLink": "../src/assets/images/projects/Museum.png",
+      "githubLink": "https://github.com/Nomad-Rob/Museum_of_the_Imagination",
+      "tools": ["HTML", "CSS", "JavaScript", "three.js", "Blender", "firebase", "vite"]
     },
     {
       "number": 6,
-      "title": "PlaceHolder",
-      "type": "frontend",
-      "description": "This is a brief description of Project Six.",
-      "imageLink": "../src/assets/images/projects/tictactoe.png",
-      "githubLink": "laksjdfklasdf",
-      "tools": ["HTML", "CSS", "JavaScript"]
+      "title": "Simple Shell",
+      "type": "other",
+      "description": "A simple shell that can execute commands, handle arguments, and handle the PATH environment variable.",
+      "imageLink": "../src/assets/images/projects/Shell.png",
+      "githubLink": "https://github.com/Nomad-Rob/holbertonschool-simple_shell",
+      "tools": ["Bash", "C", "Valgrind", "Linux"]
     },
     {
       "number": 7,
-      "title": "PlaceHolder",
-      "type": "backend",
-      "description": "This is a brief description of Project Seven.",
-      "imageLink": "../src/assets/images/projects/tictactoe.png",
-      "githubLink": "laksjdfklasdf",
+      "title": "Frog_Chat",
+      "type": "frontend",
+      "description": "A quickly made chat app to allow the user to interact with a frog. Built in a coule hours.",
+      "imageLink": "../src/assets/images/projects/frog.png",
+      "githubLink": "https://github.com/Nomad-Rob/Solo_Hackathon/tree/main/Frog_Chat",
       "tools": ["HTML", "CSS", "JavaScript"]
     },
     {
       "number": 8,
-      "title": "PlaceHolder",
+      "title": "Drone Build",
       "type": "other",
-      "description": "This is a brief description of Project Eight.",
-      "imageLink": "../src/assets/images/projects/tictactoe.png",
-      "githubLink": "laksjdfklasdf",
-      "tools": ["HTML", "CSS", "JavaScript"]
-    },
-    {
-      "number": 9,
-      "title": "PlaceHolder",
-      "type": "fullstack",
-      "description": "This is a brief description of Project Nine.",
-      "imageLink": "../src/assets/images/projects/tictactoe.png",
-      "githubLink": "laksjdfklasdf",
-      "tools": ["HTML", "CSS", "JavaScript"]
+      "description": "Building a drone from scratch. This is a work in progress.",
+      "imageLink": "../src/assets/images/projects/drone.png",
+      "githubLink": ["python", "arduino", "c++"]
     }
   ]
 }
