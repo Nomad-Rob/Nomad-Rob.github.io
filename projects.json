@@ -14,7 +14,7 @@
       "number": 2,
       "title": "Wes's Cozy Kitchen",
       "type": "other",
-      "description": "A single player breakfast ingredient choosing game developed using pygame featuring a retro theme and chill gameplay with a focus on the player's choice of ingredients and how they affect the breakfast meal chosen by the Chef.",
+      "description": "A single player breakfast ingredient choosing game featuring a retro theme and chill gameplay. Built in 12 days",
       "imageLink": "../src/assets/images/projects/pygame.jpg",
       "githubLink": "https://github.com/Nomad-Rob/Hack_Sprint-Breakfast",
       "tools": ["Python", "Pygame", "JSON"]
