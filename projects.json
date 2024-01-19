@@ -42,7 +42,7 @@
       "title": "Museum of Imagination",
       "type": "frontend",
       "description": "This is a custom frontend design from scratch utilizing three.js to create a 3D environment. Built in 10 days",
-      "imageLink": "../src/assets/images/projects/Museum.png",
+      "imageLink": "../src/assets/images/projects/Museum.jpg",
       "githubLink": "https://github.com/Nomad-Rob/Museum_of_the_Imagination",
       "tools": ["HTML", "CSS", "JavaScript", "three.js", "Blender", "firebase", "vite"]
     },
@@ -69,7 +69,7 @@
       "title": "Drone Build",
       "type": "other",
       "description": "Building a drone from scratch. This is a work in progress.",
-      "imageLink": "../src/assets/images/projects/drone.png",
+      "imageLink": "../src/assets/images/projects/drone.jpg",
       "githubLink": ["python", "arduino", "c++"]
     }
   ]
