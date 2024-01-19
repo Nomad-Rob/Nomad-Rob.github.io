@@ -318,7 +318,7 @@ body {
 }
 
 .portfolio-top .half-big-text {
-  margin: 60px auto;
+  margin: 100px auto;
 }
 
 .portfolio-second {
@@ -337,7 +337,6 @@ body {
   margin: auto;
   flex-direction: column;
   background-color: #000;
-  padding-bottom: 10%;
 }
 
 .projects-container {
