@@ -333,7 +333,7 @@ body {
 }
 
 .portfolio-collage {
-  height: 1250px;
+  height: 1000px;
   max-width: 1300px;
   margin: auto;
   flex-direction: column;
@@ -482,6 +482,7 @@ body {
   border-radius: 4px;
   margin-top: 20px;
   font-weight: 500; /* Added font weight */
+  margin-bottom: 60px;
 }
 
 #new-country-btn:hover {
@@ -659,6 +660,9 @@ body {
     padding: 15px 35px;
   }
 }
+.portfolio-top {
+  margin: 0 auto;
+}
 
 @media screen and (max-width: 1100px) {
   .big-text {
@@ -729,7 +733,7 @@ body {
     width: 100%;
   }
   .random-section {
-    height: 650px;
+    height: 300px;
   }
   .new-country {
     background-color: #ff4081;
@@ -831,6 +835,10 @@ body {
   .client-part:nth-child(4) {
     background-size: 260px 100% !important;
   }
+  
+  .portfolio-top {
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -848,11 +856,17 @@ body {
   .about-me-section {
     padding: 80px 0 0;
   }
-
-  .portfolio-bottom {
-    height: 480px;
+  
+  .portfolio-top {
+    margin: 0 auto;
   }
-
+  
+  .portfolio-collage {
+    height: 1200px;
+  }
+.random-section {
+  height: 800px;
+}
   .quarter-div {
     height: 25%;
     width: 100%;
