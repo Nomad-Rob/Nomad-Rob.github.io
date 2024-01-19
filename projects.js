@@ -4,7 +4,7 @@ fetch('projects.json')
     .then(response => response.json())
     .then(data => {
         allProjects = data.projectsData;
-        displayProjects(allProjects);
+        filterProjects('all'); // Display 6 random projects on page load
     })
     .catch(error => console.error('Error fetching data:', error));
 
@@ -17,13 +17,11 @@ fetch('projects.json')
             filteredProjects = allProjects.filter(project => project.type === type);
         }
         displayProjects(filteredProjects);
-    }
+    }    
 
 function displayProjects(projects) {
     const projectsContainer = document.getElementById('projects-container');
     projectsContainer.innerHTML = ''; // Clear existing content
-    // Shuffle the projects array to display projects in random order
-    shuffleArray(projects);
 
     projects.forEach((project, index) => {
         const cardHtml = `
