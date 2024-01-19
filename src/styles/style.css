@@ -685,6 +685,9 @@ body {
   .plan {
     margin: 0px 8px 20px;
   }
+  .random-section {
+    height: 600px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -788,6 +791,9 @@ body {
     text-align: center;
   }
 }
+.random-section {
+  height: 600px;
+}
 
 @media screen and (max-width: 700px) {
   .quad-half,
@@ -840,6 +846,9 @@ body {
     margin: 0 auto;
   }
 }
+.random-section {
+  height: 600px;
+}
 
 @media screen and (max-width: 500px) {
   .big-text {
@@ -865,7 +874,7 @@ body {
     height: 1200px;
   }
 .random-section {
-  height: 800px;
+  height: 600px;
 }
   .quarter-div {
     height: 25%;
