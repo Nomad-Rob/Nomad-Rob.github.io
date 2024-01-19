@@ -1,6 +1,6 @@
 # Portfolio Website
 
-Hello and welcome to this project. This is my portfolio website to help showcase my projects, skills and resume. Also will serve as a database if logged in as admin for my other projects. This is a Single Page Application and is built with React and React-bootstrap.
+Hello and welcome to this project. This is my portfolio website to help showcase my projects, skills and resume. Also will serve as a database if logged in as admin for my other projects. This is a Single Page Application and is still a work in progress. I am planning to update this when I have time to reflect recent updates through my projects and skills.
 
 ## Features
 
@@ -12,11 +12,11 @@ Hello and welcome to this project. This is my portfolio website to help showcase
 
 ## Build With
 
--   React
--   React-bootstrap
--   react-hook-form
--   react-animated-css
--   Sass
+-   Javascript
+-   HTML / CSS
+-   JSON
+-   Github Pages
+-   SCSS
 -   Emailjs
 
 <p align="right">(<a href="#top">back to top</a>)</p>
