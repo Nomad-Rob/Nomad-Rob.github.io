@@ -8,14 +8,22 @@ fetch('projects.json')
     })
     .catch(error => console.error('Error fetching data:', error));
 
-function filterProjects(type) {
-    const filteredProjects = type === 'all' ? allProjects : allProjects.filter(project => project.type === type);
-    displayProjects(filteredProjects);
-}
+    function filterProjects(type) {
+        let filteredProjects;
+        if (type === 'all') {
+            shuffleArray(allProjects); // Shuffle the projects
+            filteredProjects = allProjects.slice(0, 6); // Get only the first 6 projects
+        } else {
+            filteredProjects = allProjects.filter(project => project.type === type);
+        }
+        displayProjects(filteredProjects);
+    }
 
 function displayProjects(projects) {
     const projectsContainer = document.getElementById('projects-container');
     projectsContainer.innerHTML = ''; // Clear existing content
+    // Shuffle the projects array to display projects in random order
+    shuffleArray(projects);
 
     projects.forEach((project, index) => {
         const cardHtml = `
@@ -66,4 +74,12 @@ function hideProjectDetails() {
     const detailedCard = document.querySelector('.detailed-card');
     detailedCard.remove();
     document.getElementById('projects-container').classList.remove('blurry');
+}
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+    }
+    return array;
 }
