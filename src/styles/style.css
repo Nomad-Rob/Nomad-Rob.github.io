@@ -287,26 +287,8 @@ body {
 .picture:hover {
   opacity: 1;
   transition: 0.4s ease;
-  animation: bounce 0.8s infinite;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(-10px, -10px);
-  }
-  50% {
-    transform: translate(0, 0);
-  }
-  75% {
-    transform: translate(10px, -10px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
 .quad-half {
   width: 50%;
   text-align: left;
