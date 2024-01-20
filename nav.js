@@ -36,7 +36,7 @@ $(document).ready(function(){
       } else if ($(window).scrollTop() >= $('#resumeSection').offset().top - $(window).height()/2 ) {
           $('.nav-link').removeClass('active');
           $('#resumeLink').addClass('active');
-      } else if ($(window).scrollTop() >= $('#portfolioSection').offset().top - $(window).height()/2 ) {
+      } else if ($(window).scrollTop() >= $('#projectsSection').offset().top - $(window).height()/2 ) {
           $('.nav-link').removeClass('active');
           $('#portfolioLink').addClass('active');
       } else if ($(window).scrollTop() >= $('#aboutSection').offset().top - $(window).height()/2 ) {
