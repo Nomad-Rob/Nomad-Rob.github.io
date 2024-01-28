@@ -376,6 +376,12 @@ body {
   filter: blur(8px);
 }
 
+.card-img-top {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .detailed-card {
   position: absolute;
   z-index: 10;

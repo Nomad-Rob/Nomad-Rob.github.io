@@ -25,17 +25,17 @@ function displayProjects(projects) {
 
     projects.forEach((project, index) => {
         const cardHtml = `
-            <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card" data-index="${index}" style="background-color: white;">
-                    <img src="${project.imageLink}" class="card-img-top" alt="${project.title}">
-                    <div class="card-body">
-                        <h5 class="card-title">${project.title}</h5>
-                        <p class="card-text">${project.description}</p>
-                        <button class="btn btn-primary show-details-btn" style="background-color: rgba(241, 128, 45, 0.7); border: 1px solid black; color: black; font-weight: 500;">Show Details</button>
-                    </div>
-                </div>
+    <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card" data-index="${index}" style="background-color: white;">
+            <img src="${project.imageLink}" class="card-img-top" alt="${project.title}">
+            <div class="card-body">
+                <h5 class="card-title">${project.title}</h5>
+                <p class="card-text">${project.description}</p>
+                <button class="btn btn-primary show-details-btn">Show Details</button>
             </div>
-        `;
+        </div>
+    </div>
+`;
         projectsContainer.innerHTML += cardHtml;
     });
 
