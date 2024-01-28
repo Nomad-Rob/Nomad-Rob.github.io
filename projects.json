@@ -70,7 +70,26 @@
       "type": "other",
       "description": "Building a drone from scratch. This is a work in progress.",
       "imageLink": "../src/assets/images/projects/drone.jpg",
-      "githubLink": ["python", "arduino", "c++"]
+      "githubLink": "https://github.com/Nomad-Rob/Drone_Build",
+      "tools": ["Python", "Arduino", "C++"]
+    },
+    {
+      "number": 9,
+      "title": "Smiling School",
+      "type": "frontend",
+      "description": "Designing a website based off a fake clients request.",
+      "imageLink": "../src/assets/images/projects/smiling.png",
+      "githubLink": "https://github.com/Nomad-Rob/holbertonschool-smiling-school-javascript",
+      "tools": ["HTML", "CSS", "JavaScript", "Bootstrap", "jQuery", "AJAX", "API"]
+    },
+    {
+      "number": 10,
+      "title": "Weather Text",
+      "type": "fullstack",
+      "description": "A weather app that sends the user a text message with the weather for the day.",
+      "imageLink": "../src/assets/images/projects/weather.png",
+      "githubLink": "https://github.com/Nomad-Rob/Weather-Text",
+      "tools": ["Python", "API", "Twilio", "Open-Meteo API"]
     }
   ]
 }
