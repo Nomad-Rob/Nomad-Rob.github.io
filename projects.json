@@ -90,6 +90,42 @@
       "imageLink": "../src/assets/images/projects/weather.png",
       "githubLink": "https://github.com/Nomad-Rob/Weather-Text",
       "tools": ["Python", "API", "Twilio", "Open-Meteo API"]
+    },
+    {
+      "number": 11,
+      "title": "GraphQL API",
+      "type": "backend",
+      "description": " Designed to build and integrate a back-end and front-end using GraphQL",
+      "imageLink": "../src/assets/images/projects/graphQL.png",
+      "githubLink": "https://github.com/Nomad-Rob/atlas-web_graphql",
+      "tools": ["GraphQL", "React", "Node.js", "Express", "MongoDB"]
+    },
+    {
+      "number": 12,
+      "title": "Files Manager",
+      "type": "backend",
+      "description": " Full-featured file management platform, that showcases User Authentication, File Uploads, Database Management, and API Creation.",
+      "imageLink": "../src/assets/images/projects/files_manager.png",
+      "githubLink": "https://github.com/Nomad-Rob/atlas-files_manager",
+      "tools": ["Node.js", "Express", "MongoDB", "React", "Redis", "Bull.js", "Mocha"]
+    },
+    {
+      "number": 13,
+      "title": "Joy of Painting",
+      "type": "backend",
+      "description": "From the TV show 'The Joy of Painting' with Bob Ross. It involves the entire process of ETL (Extract, Transform, Load)",
+      "imageLink": "../src/assets/images/projects/joy_of_painting.png",
+      "githubLink": "https://github.com/Nomad-Rob/atlas-the-joy-of-painting-api",
+      "tools": ["Python", "Flask", "MongoDB", "ETL", "API"]
+    },
+    {
+      "number": 14,
+      "title": "Galactic Webstore",
+      "type": "fullstack",
+      "description": "Hacksprint with theme of 'Galactic Webstore'. Built in 10 days, with a marketplace theme. Backend focused project.",
+      "imageLink": "../src/assets/images/projects/pokemon_filter.png",
+      "githubLink": "https://github.com/Nomad-Rob/Pokemon_Galactic_WebStore",
+      "tools": ["JavaScript", "Firebase", "Firestore", "HTML", "CSS", "React", "API", "Node.js", "Express"]
     }
   ]
 }
