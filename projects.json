@@ -58,7 +58,7 @@
     {
       "number": 7,
       "title": "Frog_Chat",
-      "type": "frontend",
+      "type": "other",
       "description": "A quickly made chat app to allow the user to interact with a frog. Built in a coule hours.",
       "imageLink": "../src/assets/images/projects/frog.png",
       "githubLink": "https://github.com/Nomad-Rob/Solo_Hackathon/tree/main/Frog_Chat",
