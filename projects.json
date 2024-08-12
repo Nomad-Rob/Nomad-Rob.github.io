@@ -126,6 +126,15 @@
       "imageLink": "../src/assets/images/projects/pokemon_filter.png",
       "githubLink": "https://github.com/Nomad-Rob/Pokemon_Galactic_WebStore",
       "tools": ["JavaScript", "Firebase", "Firestore", "HTML", "CSS", "React", "API", "Node.js", "Express"]
+    },
+    {
+      "number": 15,
+      "title": "Centsable",
+      "type": "fullstack",
+      "description": "Capstone project that is a roundup app that rounds up your purchases and donates the change to an entity of your choice.",
+      "imageLink": "../src/assets/images/projects/centsable.png",
+      "githubLink": "https://github.com/Nomad-Rob/Centsable",
+      "tools": ["React", "Tailwind", "Node.js", "Firebase", "API", "Stripe"]
     }
   ]
 }
